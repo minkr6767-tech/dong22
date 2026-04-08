@@ -5,7 +5,7 @@
 import { logError } from './database.js';
 
 export async function callGemini(apiKey, prompt, imageBase64, imageMime) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+  const url = `https://gateway.ai.cloudflare.com/v1/bb543f05944f645339bf551ce31298c7/threads-ai/google-ai-studio/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
 
   const parts = [{ text: prompt }];
   if (imageBase64) {
